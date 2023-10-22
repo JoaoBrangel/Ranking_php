@@ -15,5 +15,5 @@
 	}
 	$_SESSION['erro'] = "Login ou senha incorretos";
 	
-	header("Location: index.php");//sensitive redireciona em php ======== só funciona em pagina em branco!!!
+	header("Location: login.php");//sensitive redireciona em php ======== só funciona em pagina em branco!!!
 ?>
