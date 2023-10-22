@@ -23,7 +23,7 @@
         <input type="text" name="nome" required placeholder="nome"><br />
 
         <label for="comentario">E-MAIL</label>
-        <input type="email" name="email" required maxlength="15" placeholder="exemplo@gmail.com"><br />
+        <input type="email" name="email" required placeholder="exemplo@gmail.com"><br />
 
         <label for="comentario">comentario</label>
         <textarea type="story" name="comentario" required maxlength="100" placeholder="Maximo de 100"></textarea><br /><!-- comentario -->

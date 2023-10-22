@@ -14,7 +14,7 @@
             <li><a href="#">CONTEUDO</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
-            <li><a href="conexao.php">CONEXAO</a></li>
+            <!-- <li><a href="conexao.php">CONEXAO</a></li> -->
         </ul>
     </header>
 
