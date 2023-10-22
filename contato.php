@@ -14,18 +14,22 @@
             <li><a href="conteudo.php">CONTEUDO</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="#">CONTATO</a></li>
+            <li><a href="conexao.php">conexao</a></li>
         </ul>
     </header>
 
-    <form action="conteudo.php" method="POST">
-							<label for="nome">Número inicial</label>
-							<input type="text" name="nome"><br/>
-							
-							<label for="comentario">comentario</label>
-							<input type="text" name="comentario"><br/>
-							
-							<input type="submit" value="Enviar"/>
-			</form>
+    <form action="conexao.php" method="POST">
+        <label for="nome">Número inicial</label><!-- Nome -->
+        <input type="text" name="nome" required placeholder="nome"><br />
+
+        <label for="comentario">E-MAIL</label>
+        <input type="email" name="email" required maxlength="15" placeholder="exemplo@gmail.com"><br />
+
+        <label for="comentario">comentario</label>
+        <textarea type="story" name="comentario" required maxlength="100" placeholder="Maximo de 100"></textarea><br /><!-- comentario -->
+
+        <input type="submit" value="Enviar" />
+    </form>
     <?php
     echo 'contato'
 

@@ -19,13 +19,9 @@
 
 
     <?php
-    // $nome = $_GET['nome'];
-    // $tamanho = $_GET['tamanho'];
-    $nome = $_POST["nome"];
-    $comentario = $_POST["comentario"];
 
-    echo $nome;
-    echo $comentario;
+            
+
     ?>
 </body>
 
