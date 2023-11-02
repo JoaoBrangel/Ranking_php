@@ -1,28 +1,23 @@
 <?php
-
-
-$hostname = "localhost";
-$bancodedados = "teste";
-$usuario = "root";
-$senha = "Cleide111";
-
-//Create connection
-
-$mysql = new mysqli($hostname, $usuario, $senha, $bancodedados);
-if($mysql->connect_errno){
-
-    echo"falha ao conectar (" . $mysql->connect_errno .") " . $mysql->connect_errno;
+$host = 'localhost'; //tipo do local
+$usuario = 'root'; //nome do usuario do banco
+$senha = 'Cleide111'; // senha
+$bd ='ranking'; //database
+$con = mysqli_connect($host, $usuario, $senha, $bd);
+if(mysqli_connect_errno()){
+    echo"Falha ao conectar ao mysql" . mysqli_connect_errno();
+    exit();
+//vai cair na prova
 }
-echo"oi calica";
+echo'deu certo';
 
+//include(); inclusao
+//require(); requisito
 
+//include_once(); 1 vez
+//require_once(); 1 vez
 
-// $conn = mysqli_connect($servename, $username, $password, $database);
-
-// // confirmando conexão!
-
-// if(!$conn){
-//     die("connectoin failed: ". mysqli_connect_errno());
-// }echo "Connected com sucesso";
-// mysqli_close($conn);
-// ?>
+//mysql conexão antiga
+//mysqli versão atual, so funcaiona com o mysql
+//pdo so com orientação de objetos perfeito
+?>
