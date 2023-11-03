@@ -42,13 +42,20 @@ require("databaseconnect.php");
     ?>
 
     <form action="conteudo.php" method="POST">
-        <label for="comentario">comentario</label>
+        <label for="comentario">Deixe seu comentario</label>
 
-        <!-- <textarea type="story" name="comentario" required maxlength="100" placeholder="Maximo de 100"></textarea><br />comentario -->
+            <input type="text" name="comentario">
 
         <input type="submit" id="1" value="Enviar" />
         <?php
+        $sql_comentario = "select * from comentario;";
+        $obj_consulta_comentario = mysqli_query($con,$sql_comentario);
+        while($comentario_consulta = mysqli_fetch_array($obj_consulta_comentario)){
+        echo"<label>" . $comentario_consulta["comentario"] . "</label>";
+        }
+
         ?>
+        <label>aaaaaaaaaa</label>
     </form>
 
 

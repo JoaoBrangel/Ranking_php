@@ -1,0 +1,86 @@
+create database ranking;
+
+use ranking;
+
+create table piloto(
+	id_pilotos int primary key auto_increment,
+    Nome_piloto varchar (100) not null,
+    equipe_piloto varchar (100) not null
+);
+
+insert into piloto values
+(null,'Lewis Hamilton','mercedes'),
+(null,'Juan Manuel Fangio','Rivadavia'),
+(null,'Charles Leclerc','Ferrari'),
+(null,'Max Verstappen','Red Bull'),
+(null,'Zhou Guanyu','alfa romeu');
+
+select * from piloto order by id_pilotos;
+
+create table usuario(
+	id_usuario int primary key auto_increment not null, 
+    nome varchar (500) not null,
+    senha varchar (500) not null
+);
+
+
+insert into usuario values
+(null,'joao','12345'),
+(null,'geovana','12345')
+;
+drop table usuario;
+select * from usuario;
+
+create table votos (
+fk_usuario int not null, foreign key (fk_usuario) references usuario (id_usuario),
+fk_piloto int not null, foreign key (fk_piloto) references piloto (id_pilotos)
+);
+
+
+
+select nome 'nome usuario', fk_usuario 'Voto', fk_piloto 'id_Piloto', nome_piloto 'Nome piloto' from usuario u
+inner join votos v
+on u.id_usuario = v.fk_usuario
+inner join piloto p
+on p.id_pilotos = v.fk_piloto;
+
+-- ============
+insert into votos values
+(1,5),
+(2,1),
+(1,3),
+(2,2);
+
+select * from usuario; 
+select count(fk_piloto) 'QTD votos', nome_piloto 'Piloto' from votos v
+inner join piloto p
+on p.id_pilotos = v.fk_piloto
+group by nome_piloto;
+
+select Nome,fk_piloto 'id piloto', nome_piloto 'Piloto' from votos v
+inner join piloto p
+on p.id_pilotos = v.fk_piloto
+inner join usuario u
+on v.fk_usuario = u.id_usuario ;
+-- unique
+create table contato
+(id_contato int primary key auto_increment not null,
+nome varchar(100) not null, 
+email varchar(200)  not null,
+comentario varchar (300) not null
+);
+
+
+select * from usuario
+where not nome = '';
+
+create table v_comentario
+(id_comentario int primary key auto_increment,
+comentario varchar(300) not null
+);
+
+insert into v_comentario (comentario)values
+('olha o teste 1'),
+('olha o teste 2'),
+('olha o teste 3'),
+('olha o teste 4');
