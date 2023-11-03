@@ -1,3 +1,7 @@
+<?php
+require("databaseconnect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,7 +18,7 @@
             <li><a href="#">CONTEUDO</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
-            <li><a href="login.php">CONTATO</a></li>
+            <li><a href="login.php">LOGIN</a></li>
         </ul>
     </header>
 
@@ -42,8 +46,13 @@
 
         <!-- <textarea type="story" name="comentario" required maxlength="100" placeholder="Maximo de 100"></textarea><br />comentario -->
 
-        <input type="submit" value="Enviar" />
+        <input type="submit" id="1" value="Enviar" />
+        <?php
+        ?>
     </form>
+
+
+
 
 
     <?php
@@ -56,7 +65,7 @@
 
     // $listadecomentarios = array();
 
-    
+
     // // array_push($listadecomentarios, array("$usuario", "$comentario"));
     // print_r($listadecomentarios);
 

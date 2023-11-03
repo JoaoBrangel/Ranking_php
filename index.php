@@ -7,6 +7,12 @@ require("databaseconnect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <style>
+        td{
+            padding:5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,20 +39,26 @@ require("databaseconnect.php");
 <Table border="1" cellspacing="0">
     <tr>
         <td>Classificação</td>
+        <td>QTD VOTOS</td>
         <td>Nome</td>
-        <td>Equipe</td>
 </tr>
 <?php
 //mysqli_fetch_array transforma os campos no array
-$sql = "select * from ranking_pilotos;";
+$sql = "select count(fk_piloto) 'QTD votos', nome_piloto 'Piloto' from votos v
+inner join piloto p
+on p.id_pilotos = v.fk_piloto
+group by nome_piloto order by COUNT(fk_piloto) DESC  limit 10;";
+
 $obj_consulta = mysqli_query($con,$sql);//puxando as informações perguntando qual  a conexão e o comando!!!1
-while($reg_consulta = mysqli_fetch_array ($obj_consulta)){
+for($classifi= 1 ; $reg_consulta = mysqli_fetch_array ($obj_consulta) ; $classifi++){
     echo "<tr>";
-        echo "<td>" . $reg_consulta["votos_piloto"] . "</td>";
-        echo "<td>" . $reg_consulta["Nome_piloto"] . "</td>";
-        echo "<td>" . $reg_consulta["equipe_piloto"] . "</td>";
+        echo "<td>" .$classifi . "°" . "</td>";
+        echo "<td>" . $reg_consulta["QTD votos"] . "</td>";
+        echo "<td>" . $reg_consulta["Piloto"] . "</td>";
     echo "</tr>";
+
 }
+
 ?>
 
     </table>

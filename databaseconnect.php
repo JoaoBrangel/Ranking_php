@@ -11,6 +11,10 @@ if(mysqli_connect_errno()){
 }
 echo'deu certo';
 
+
+
+
+
 //include(); inclusao
 //require(); requisito
 
