@@ -1,0 +1,120 @@
+create database ranking;
+
+use ranking;
+
+create table piloto(
+	id_pilotos int primary key auto_increment,
+    Nome_piloto varchar (100) not null,
+    equipe_piloto varchar (100) not null
+);
+
+insert into piloto values
+(null,'Lewis Hamilton','mercedes'),
+(null,'Juan Manuel Fangio','Rivadavia'),
+(null,'Charles Leclerc','Ferrari'),
+(null,'Max Verstappen','Red Bull'),
+(null,'Zhou Guanyu','alfa romeu');
+
+select * from piloto order by id_pilotos;
+
+create table usuario(
+	id_usuario int primary key auto_increment not null, 
+    nome varchar (500) unique not null,
+    senha varchar (500) not null
+);
+
+
+insert into usuario values
+(null,'joao','123'),
+(null,'geovana','123'),
+(null,'endryl','123'),
+(null,'luiz','123')
+;
+drop database ranking;
+drop table usuario;
+select * from usuario;
+
+create table votos (
+fk_usuario int not null, foreign key (fk_usuario) references usuario (id_usuario),
+fk_piloto int not null, foreign key (fk_piloto) references piloto (id_pilotos)
+);
+
+
+
+select nome 'nome usuario', fk_usuario 'Voto', fk_piloto 'id_Piloto', nome_piloto 'Nome piloto' from usuario u
+inner join votos v
+on u.id_usuario = v.fk_usuario
+inner join piloto p
+on p.id_pilotos = v.fk_piloto;
+
+drop database ranking;
+-- ============
+insert into votos values
+(2,2),
+(1,3);
+truncate table votos;
+select * from votos;
+select * from piloto;
+select * from usuario; 
+
+drop database ranking;
+delete from votos where fk_usuario = 38;
+
+truncate table votos; -- truncateeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+select count(*) as total from votos where fk_usuario = 1;
+
+select count(fk_piloto) 'QTD votos', nome_piloto 'Piloto' from votos v
+inner join piloto p
+on p.id_pilotos = v.fk_piloto
+group by nome_piloto;
+
+select Nome,fk_piloto 'id piloto', nome_piloto 'Piloto' from votos v
+inner join piloto p
+on p.id_pilotos = v.fk_piloto
+inner join usuario u
+on v.fk_usuario = u.id_usuario ;
+-- unique
+create table contato
+(id_contato int primary key auto_increment not null,
+nome varchar(100) not null, 
+email varchar(200)  not null,
+comentario varchar (300) not null
+);
+
+truncate table usuario;
+select * from usuario
+where not nome = '%joao%';
+
+create table v_comentario
+(comentario varchar(300) not null,
+fk_usuario int not null, foreign key (fk_usuario) references usuario (id_usuario)
+);
+
+insert into v_comentario (comentario,fk_usuario)values
+('yuri teste',2);
+
+select * from usuario;
+select * from v_comentario;
+
+select Nome, comentario from v_comentario v
+inner join usuario u
+on  v.fk_usuario = u.id_usuario;
+
+select id_usuario from usuario where nome = 'joao';
+
+select * from usuario;
+
+delete from usuario where nome = '';
+
+
+select *  from v_comentario;
+
+select id_usuario from usuario where nome = 'endryl123';
+
+create table teste(
+	votos int not null,
+    id int not null
+);
+delete from usuario where id_usuario = 7;
+select * from usuario;
+select * from teste;
