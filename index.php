@@ -8,7 +8,7 @@ require("databaseconnect.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="css/style.css">
      <style>
         td{
             padding:5px;
@@ -25,13 +25,13 @@ require("databaseconnect.php");
 		session -->
 
     <header>
+        <div class="logo"></div>
+
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="conteudo.php">CONTEUDO</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
-
-            
             <li>
             <?php
             if(isset($_SESSION['logado']) && $_SESSION['logado'] == "s"){
