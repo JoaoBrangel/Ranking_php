@@ -1,4 +1,5 @@
 <?php
+session_start();
 require("databaseconnect.php");
 ?>
 <!DOCTYPE html>
@@ -29,7 +30,23 @@ require("databaseconnect.php");
             <li><a href="conteudo.php">CONTEUDO</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
-            <li><a href="login.php">login</a></li>
+
+            
+            <li>
+            <?php
+            if(isset($_SESSION['logado']) && $_SESSION['logado'] == "s"){
+                //se a sessão existir e conter o valor de "s"
+                echo"Olá ", $_SESSION["usuario"], "<br>";
+                echo"<a href='logout.php'>Desconectar</a>";
+                }else{
+                    ?>
+                    <a href="login.php">login</a></li>
+                    <?php
+                }
+        
+            ?>
+            
+            
             
         </ul>
     </header>

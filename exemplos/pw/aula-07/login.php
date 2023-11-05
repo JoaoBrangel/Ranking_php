@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	
+	//exemplo
 	$usuario = $_POST['usuario'];
 	$senha = $_POST['senha'];
 
@@ -12,5 +12,8 @@
 	}
 	$_SESSION['erro'] = "Login ou senha incorretos";
 	
-	header("Location: home.php");//sensitive redireciona em php ======== ssó funciona em pagina em branco!!!
+	header("Location: home.php");//sensitive redireciona em php ======== só funciona em pagina em branco!!!
+
+
+
 ?>

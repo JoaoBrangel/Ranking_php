@@ -1,35 +1,34 @@
+
 <?php
 session_start();
-
+include("databaseconnect.php");
 
 // cadadastro ============================
-include("databaseconnect.php"); 
-$nome = filter_input(INPUT_POST, 'nomeCadastro', FILTER_SANITIZE_STRING);
-$senha = filter_input(INPUT_POST, 'senhaCadastro', FILTER_SANITIZE_SPECIAL_CHARS);
 
-// echo "$nome";
-// echo "$senha";
+$nomeCadastro = $_POST['nomeCadastro'];
+$senhaCadastro = $_POST['senhaCadastro'];
 
-$cadastrar_usuario = "insert into usuario (nome, senha) values ('$nome', '$senha')";
-mysqli_query($con, $cadastrar_usuario);
 
-if(mysqli_insert_id($con)){
-    $_SESSION['msg'] = "<p style='color:green'>Usuario cadastrado com sucesso</p>";
-    header("location:login.php");
-}else{
-    $_SESSION['msg'] = "<p style='color:red'>Usuario ou senha incorretos</p>";
-    header("location: login.php");
+$sql = "select count(*) as total from usuario where nome = '$nomeCadastro';";
+
+$result = mysqli_query($con, $sql);
+
+$row = mysqli_fetch_assoc($result);
+//consultando
+if($row['total'] == 1){
+	$_SESSION['status'] = "usuario ja existe";
+	header('location: login.php');
 }
-// login =========
-$usuario = $_POST['usuario'];
-	$senha = $_POST['senha'];
+//inserindo no banco
+$sql = "insert into usuario (nome, senha) values ('$nomeCadastro', '$senhaCadastro')";
 
+if($con->query($sql) === true){
+	//se a conexao for verdadeira
+	$_SESSION['status'] = "usuario cadastrado!";
+}
 
-	if($usuario === "uni" && $senha === "123"){
-		$_SESSION['logado'] = 's';
-		$_SESSION['usuario'] = $usuario;
-		$_SESSION['erro'] = "";
-	}
-	$_SESSION['erro'] = "Login ou senha incorretos";
-	
-	header("Location: login.php");//sensitive redireciona em php ======== só funciona em pagina em branco!!!
+header('location: login.php');//voltando para a pagina login
+
+$con->close();
+exit;
+?>

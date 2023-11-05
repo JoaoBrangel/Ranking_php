@@ -9,9 +9,6 @@ if(mysqli_connect_errno()){
     exit();
 //vai cair na prova
 }
-echo'deu certo';
-
-
 
 
 
