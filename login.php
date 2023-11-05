@@ -37,12 +37,12 @@ require("databaseconnect.php");
 
 		<label>Usuario:</label>
 		<br>
-		<input type="text" name="nomeCadastro" placeholder="usuario">
+		<input type="text" name="nomeCadastro" minlength="8" placeholder="usuario">
 		<br>
 		<label>Senha:</label>
 		<br>
 
-		<input type="password" name="senhaCadastro" placeholder="senha">
+		<input type="password" name="senhaCadastro" minlength="4" placeholder="senha">
 		<br>
 		<input type="submit" value="cadastrar">
 

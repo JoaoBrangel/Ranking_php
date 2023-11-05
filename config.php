@@ -9,6 +9,7 @@ $nomeCadastro = $_POST['nomeCadastro'];
 $senhaCadastro = $_POST['senhaCadastro'];
 
 
+
 $sql = "select count(*) as total from usuario where nome = '$nomeCadastro';";
 
 $result = mysqli_query($con, $sql);

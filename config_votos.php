@@ -49,10 +49,10 @@ if ($row_veri['total'] == 1) {
 
 if ($con->query($sql_input) === true) {
     //se a conexao for verdadeira
-    $_SESSION['votos'] = "voto feito!<br>" . print($row_veri);
+    $_SESSION['votos'] = "voto feito!<br>";
 } else {
 
-    $_SESSION['votos'] = "erro!<br> " . print($voto);;
+    $_SESSION['votos'] = "Por gentileza para votar faça login!<br> ";
 }
 
 header('location: conteudo.php'); //voltando para a pagina
