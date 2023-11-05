@@ -21,8 +21,26 @@ ul{
     margin: 23px;
 }
 li{
-    color: blueviolet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
     list-style-type: none;
     padding-left: 2rem;
     cursor: pointer;
+}
+li a{
+    color: white;
+    list-style-type: none;
+}
+.img_topo{
+    width: 100%;
+    height: 10%;
+    
+    /* background-color: blue; */
+    box-shadow: 0 0 1rem black;
+}
+.img_topo img{
+    width: 100%;
+    height: 50vh;
+  filter: blur(5px); /*Deixando o efeito embaçado*/
+  box-shadow: 0 0 1rem black;
 }

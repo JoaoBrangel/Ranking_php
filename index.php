@@ -43,14 +43,17 @@ require("databaseconnect.php");
                     <a href="login.php">login</a></li>
                     <?php
                 }
-        
             ?>
-            
-            
-            
         </ul>
     </header>
 
+    <div class="img_topo">
+                    <a>Ranking dos pilotos Principais</a>
+                
+                
+                <img src="css/img/f_index.png">
+
+    </div>
 
 
 <Table border="1" cellspacing="0">
