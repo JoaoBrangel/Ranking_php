@@ -1,13 +1,5 @@
 .form {
-    background-color: aqua;
-    width: 850px;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 450px;
-    margin-top: 10px;
-    border: solid 4px black;
+
 }
 .botao {
     align-items: center;

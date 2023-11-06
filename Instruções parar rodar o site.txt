@@ -1,0 +1,4 @@
+Execute todo o script do banco de dados que esta salvo na pasta para rodar o site
+Caso algum arquivo tenho corrompido faça um git clone do github!
+
+Link: https://github.com/JoaoBrangel/Ranking_php

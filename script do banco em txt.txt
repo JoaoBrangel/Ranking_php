@@ -5,15 +5,22 @@ use ranking;
 create table piloto(
 	id_pilotos int primary key auto_increment,
     Nome_piloto varchar (100) not null,
-    equipe_piloto varchar (100) not null
+    equipe_piloto varchar (100) not null,
+    pais_piloto varchar (100) not null,
+    pais_piloto varchar (100) not null,
+    numero_piloto varchar (100) not null
 );
-
+select * from piloto;
 insert into piloto values
-(null,'Lewis Hamilton','mercedes'),
-(null,'Juan Manuel Fangio','Rivadavia'),
-(null,'Charles Leclerc','Ferrari'),
-(null,'Max Verstappen','Red Bull'),
-(null,'Zhou Guanyu','alfa romeu');
+(null, 'Max Vertappen', 'Red Bull', 'Holanda', '1'),
+(null, 'Sérgio Perez', 'Red Bull', 'México', '11'),
+(null, 'Lewis Hamilton', 'Petronas', 'Reino Unido', '44'),
+(null, 'Fernando Alonza', 'Aston Martin', 'Espanha', '14'),
+(null, 'Charles Leclerc', 'Ferrari', 'Mônaco', '16'),
+(null, 'Lando Norris', 'McLaren', 'Reino Unido', '4'),
+(null, 'Pierre Gasly', 'alpine', 'França', '10'),
+(null, 'Geoge Russel', 'Mercedes', 'Reino Unido', '63'),
+(null, 'Carlos Sainz', 'Ferrari', 'Espanha', '55');
 
 
 /*criando a tabela usuario */

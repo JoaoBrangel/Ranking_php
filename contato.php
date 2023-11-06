@@ -8,22 +8,22 @@ require("databaseconnect.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conato</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/contato1.css">
 
 </head>
 
 <body>
-<header>
+    <header>
         <a href="index.php"><img src="css/img/LOGO.png" class="logo"></a>
 
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="#.php">VOTAR</a></li>
+            <li><a href="conteudo.php">VOTAR</a></li>
             <li><a href="conteudo2.php">TIMES</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
-            <li><a href="contato.php">CONTATO</a></li>
+            <li><a href="#.php">CONTATO</a></li>
             <li>
                 <?php
                 if (isset($_SESSION['logado']) && $_SESSION['logado'] == "s") {
@@ -39,28 +39,75 @@ require("databaseconnect.php");
         ?>
         </ul>
     </header>
+    <div class="div-conrole">
+        <div class="conteiner-tit">
 
-<div class="form">
-    <form action="conexao.php" method="POST">
-        <label for="nome">NOME</label><!-- Nome -->
-        <br>
-        <input type="text" name="nome" required placeholder="nome"><br />
+            <h1>Como posso ajudar?</h1>
+            <div class="tit-sobre">
+                <span>Você tem alguma pergunta ou está interessado em trabalhar com minha equipe?</span>
+                <span>é só preencher os campos do formulario abaixo.</span>
+            </div>
+        </div>
 
-        <label for="comentario">E-MAIL</label>
-        <br>
-        <input type="email" name="email" required placeholder="exemplo@gmail.com"><br />
 
-        <label for="comentario">COMENTÁRIO</label>
-        <br>
-        <textarea type="story" name="comentario" required maxlength="100" placeholder="Maximo de 100"></textarea><br /><!-- comentario -->
-        <hr>
-        <input type="submit" value="Enviar" class="botao" />
-    </form>
-</div>
-    <?php
-    echo 'contato'
 
-    ?>
+        <form class="controle-form" action="https://formsubmit.co/jaum2003luiz@gmail.com" method="POST" class="form">
+
+            <div class="form-input">
+                <div class="di">
+                    <label for="name">Nome</label>
+                    <input class="inputs" type="text" name="name" id="name" required placeholder="Nome" />
+                </div>
+                <div class="di">
+                    <label for="email">E-mail</label>
+                    <input class="inputs" type="email" name="email" id="email" required placeholder="E-mail" />
+                </div>
+            </div>
+            <div class="mensagem-form">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" required placeholder="Digite aqui sua mensagem"></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="http://localhost/ranking_php/contato.php" />
+                <div class="marge-bt">
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <footer>
+        <div class="forter-controler-main">
+            <div class="forter-controler">
+                <div class="footer1">
+                    <img src="css/img/LOGO.png" class="icon-logo">
+                </div>
+                <div class="footer2">
+                    <div class="p1">
+                        <label><b>Quem somos</b></label>
+                        <br>
+                        <br>
+                        <a>Site desenvolvido para amantes de fórmula 1. Fiquei por dentro de notícias, estatísticas e entretenimento do mundo do automobilismo.</a>
+                    </div>
+                    <div class="p2">
+                        <a href="conteudo.php">Ranking</a>
+                    </div>
+                    <div class="p3">
+                        <a href="conteudo.php">Fale conosco</a>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="icon">
+                        <a href="#"><img src="css/img/logo github.png" class="icon-git"></a>
+                        <a href="#"><img src="css/img/LinkedIn_logo_initials.png" class="icon-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="direitos">
+                <Label>© 2023 - 2023 - http://localhost/ranking_php/index.php - TODOS OS DIREITOS RESERVADOS.</Label>
+            </div>
+        </div>
+    </footer>
 </body>
+<!-- formsubit vai mandar para esse site e em seguida vai mandar para o destinatario! -->
 
 </html>

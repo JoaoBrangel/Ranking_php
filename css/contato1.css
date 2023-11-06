@@ -1,0 +1,97 @@
+
+.div-conrole{
+    background-color: white;
+    margin: 3%;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+}
+.conteiner-tit{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: 30vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  flex-direction: column;
+  /* word-spacing: 10px; */
+  /* letter-spacing: 1px; */
+}
+.tit-sobre{
+    flex-direction: column;
+    display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+
+.botao {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 110px;
+}
+.controle-form{
+    /* background-color: aqua; */
+    width:70%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.form-input{
+    margin: 5%;
+    width: 80%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form-input input{
+    /* border-end-end-radius:0 ;
+    border-top-left-radius:0 ; */
+  
+}
+.inputs{
+    border-radius: 0;
+    /* border-start-end-radius:1px ; */
+}
+.mensagem-form{
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5%;
+}
+.mensagem-form textarea{
+    width: 90%;
+}
+.mensagem-form button{
+    width: 90%;
+    height: 4vh;
+    border-radius: 20px;
+    background-color: rgb(21, 21,21); 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    color: red;
+    border:0 ;
+    box-shadow: 1px 7px 15px black;
+}
+.mensagem-form button:active{
+    width: 82%;
+    height: 3vh;
+    color: white;
+    box-shadow: 1px 2px 10px black;
+}
+.marge-bt{
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
