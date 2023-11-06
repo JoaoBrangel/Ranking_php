@@ -49,8 +49,8 @@ require("databaseconnect.php");
 
 <div class="divpai">
     <div class="foto">
-        <div class="img">
-            <img src="css/img/red_bull.jpeg">
+        <div>
+            <img class="img" src="css/img/red_bull.jpeg">
         </div>
     </div>
     <div class="desc">
@@ -88,8 +88,8 @@ require("databaseconnect.php");
         </p>
     </div>
     <div class="foto">
-        <div class="img">
-            <img src="css/img/mercedes.jpeg">     
+        <div>
+            <img class="img" src="css/img/mercedes.jpeg">     
         </div>
     </div>
 </div>
@@ -97,8 +97,8 @@ require("databaseconnect.php");
 
 <div class="divpai">
     <div class="foto">
-        <div class="img">
-            <img src="css/img/ferrari1.jpg">           
+        <div>
+            <img class="img" src="css/img/ferrari1.jpg">           
         </div>
     </div>
     <div class="desc">

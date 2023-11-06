@@ -57,10 +57,17 @@ require("databaseconnect.php");
         <input type="submit" value="Enviar" class="botao" />
     </form>
 </div>
-    <?php
-    echo 'contato'
 
-    ?>
+<div class="divpai">
+    <div class="i">ENDEREÇO</div>
+    <div class="u">TELEFONE</div>
+    <div class="i">LINKEDIN</div>
+    <div class="u">E-MAIL</div>
+</div>
+
+
+<br>
+   
 </body>
 
 </html>
