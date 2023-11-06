@@ -1,0 +1,180 @@
+.desc-conteudo{
+    width: 45vw;
+    height: 25vh;
+    background-color:  rgb(21, 21,21);
+    border-radius: 5px;
+    position: relative;
+    margin-top: -100px;
+}
+.desc-descritiva{
+    width: 90%;
+    margin: 20px;
+    word-wrap: break-word;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+    text-shadow: 1px 7px 2px black;
+}
+.container-perfil-pai{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.container-camada1{
+    height: 30vh;
+    padding: 4%;
+    /* background-color: brown ; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    word-wrap: break-word;
+}
+.card{
+    width: 20%;
+    height: 35vh;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.card img{
+    width: 90%;
+    box-shadow: 0px 10px 15px black;
+}
+.card input{
+    width: 90%;
+    height: 15%;
+    border: 0;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    background-color:  rgb(21, 21,21);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 1px 10px black;
+}
+.card input:active{
+    color: red;
+    font-size: 10px ;
+    background-color: black;
+    
+}
+.perfilcor{
+    background-color: white;
+    width: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+.card-erro{
+    margin-top: 10px;
+    margin-left: 40%;
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(136, 0, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 2px 10px rgb(21, 21,21);
+}
+.card-bom{
+    margin-top: 10px;
+    margin-left: 40%;
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(77, 136, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 2px 10px rgb(21, 21,21);
+    
+}
+.containercomentario{
+    background-color:  rgb(21, 21,21);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}/* aqui o controle */
+.containercomentario-margen{
+    padding: 2%;
+}
+.card-Logue{
+    margin-top: 10px;
+    margin-left: 40%;
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(77, 136, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 1px 2px 10px rgb(21, 21,21);
+}
+.card-comentario{
+    margin-top: 20px;
+    height: 15vh;
+    width: 30vw;
+    background-color: rgb(77, 136, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 10px rgb(0, 0, 0);
+}
+.comentario-tit{
+    
+    width: 65%;
+    height: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.input-comentario{
+    width: 98%;
+}
+.comdig{
+    width: 80%;
+    border-radius: 5px;
+    border: 2px solid black;
+    border-top-left-radius:5px ;
+    border-end-start-radius:5px ;
+    
+}
+.enviardig{
+    border-top-right-radius:5px ;
+    border-end-end-radius:5px ;
+    border: 0;
+    background-color:  rgb(21, 21,21);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.enviardig:active{
+    color: red;
+    font-size: 10px ;
+    background-color: black;
+    
+}
+.comentario-card{
+    
+    background-color: #EEF3FB;
+    width: 90%;
+    height: 7vh;
+    padding: 1%;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px black;
+}
+.comentario-card-marge{
+    border: 1px solid black;
+    /* background-color: blue  ; */
+    margin: 0;
+}

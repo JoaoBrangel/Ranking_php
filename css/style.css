@@ -1,12 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #EEF3FB;
 }
 .logo{
     width: 42px;
     height: 42;
-    border-radius: 100px;
-    background-color: aqua;
+    
+    /* background-color: aqua; */
     margin: 10px;
 }
 header{
@@ -21,7 +22,7 @@ ul{
     margin: 23px;
 }
 li{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     list-style-type: none;
     padding-left: 2rem;
@@ -33,14 +34,171 @@ li a{
 }
 .img_topo{
     width: 100%;
-    height: 10%;
-    
-    /* background-color: blue; */
+    height: 50vh;
+    /* background-image: url(img/f_index.png); */
     box-shadow: 0 0 1rem black;
+    background-image: url(img/testeindex.jpg);
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.img_topo img{
+.img_topo1{
     width: 100%;
     height: 50vh;
-  filter: blur(5px); /*Deixando o efeito embaçado*/
-  box-shadow: 0 0 1rem black;
+    /* background-image: url(img/f_index.png); */
+    box-shadow: 0 0 1rem black;
+    background-image: url(img/conteudoembacado.jpg);
+    
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img_topo3{
+    width: 100%;
+    height: 50vh;
+    /* background-image: url(img/f_index.png); */
+    box-shadow: 0 0 1rem black;
+    background-image: url(img/og_image.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-top-fundo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nome-topo{
+    margin: 0;
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    text-shadow: 1px 7px 10px black;
+}
+.nome-topo-baixo{
+    margin: 0;
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    text-shadow:0 0 3rem black ;
+}
+.forter-controler{
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.footer1{
+/* background-color: aqua; */
+    width: 33%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.p1{
+    
+    width: 33%;
+    font-size: 1em;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    color: #EEF3FB;
+}.p2{
+    
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    text-decoration-line: none ;
+}
+.p3{
+    
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+.p2 a{
+    color: #EEF3FB;
+    cursor: pointer;
+    text-decoration: none; 
+    text-decoration-style: none;
+}
+.p3 a{
+    cursor: pointer;
+    text-decoration: none; 
+    text-decoration-style: none;
+    color: #EEF3FB;
+    cursor: pointer;
+}
+
+.footer2{
+    /* background-color: blue; */
+    width: 33%;
+    height: 100%;
+    margin: 10px;
+    padding: 0;
+}
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.footer3{
+    margin: 0;
+    padding: 0;
+    width: 33%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-git{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.icon-link{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.direitos{
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.icon-logo{
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
 }

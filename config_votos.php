@@ -36,8 +36,8 @@ $sql_consulta_voto = "select count(*) as total from votos where fk_usuario = '$i
 $result = mysqli_query($con, $sql_consulta_voto);
 $row_veri = mysqli_fetch_assoc($result);
 
-if ($row_veri['total'] == 1) {
-    $_SESSION['votoErro'] = "ja votou";
+if ($row_veri['total'] >= 1) {
+    $_SESSION['votoErro'] = "Você já votou!!";
    
 
     $con->close();
@@ -52,7 +52,7 @@ if ($con->query($sql_input) === true) {
     $_SESSION['votos'] = "voto feito!<br>";
 } else {
 
-    $_SESSION['votos'] = "Por gentileza para votar faça login!<br> ";
+    $_SESSION['votos'] = "faça login para votar!<br> ";
 }
 
 header('location: conteudo.php'); //voltando para a pagina

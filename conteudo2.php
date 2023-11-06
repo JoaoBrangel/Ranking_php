@@ -16,10 +16,12 @@ require("databaseconnect.php");
 
 <body>
     <header>
-        <div class="logo"></div>
+        <a href="index.php"><img src="css/img/LOGO.png" class="logo"></a>
+
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="conteudo.php">CONTEUDO</a></li>
+            <li><a href="conteudo.php">VOTAR</a></li>
+            <li><a href="#.php">TIMES</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li>
@@ -117,7 +119,38 @@ require("databaseconnect.php");
         </p>
     </div>
 </div>
-
+<footer>
+        <div class="forter-controler-main">
+            <div class="forter-controler">
+                <div class="footer1">
+                    <img src="css/img/LOGO.png" class="icon-logo">
+                </div>
+                <div class="footer2">
+                    <div class="p1">
+                        <label><b>Quem somos</b></label>
+                        <br>
+                        <br>
+                        <a>Site desenvolvido para amantes de fórmula 1. Fiquei por dentro de notícias, estatísticas e entretenimento do mundo do automobilismo.</a>
+                    </div>
+                    <div class="p2">
+                        <a href="conteudo.php">Ranking</a>
+                    </div>
+                    <div class="p3">
+                        <a href="conteudo.php">Fale conosco</a>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="icon">
+                        <a href="#"><img src="css/img/logo github.png" class="icon-git"></a>
+                        <a href="#"><img src="css/img/LinkedIn_logo_initials.png" class="icon-link"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="direitos">
+                <Label>© 2023 - 2023 - http://localhost/ranking_php/index.php - TODOS OS DIREITOS RESERVADOS.</Label>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,162 @@
+.container-pai{
+    width: 100%;
+}
+.cointainer-filho{
+    background-color: white;
+    margin: 2%;
+    height: 97vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-end-end-radius:0 ;
+}
+.conteiner-info{
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+.bt_votar{
+    border-radius: 40px;
+    height: 5vh;
+    width: 8vw;
+    background-color:  rgb(21, 21,21);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    color: white;
+    border:0 ;
+    box-shadow: 1px 7px 15px black;
+}
+.bt_votar:active{
+    color: red;
+}
+
+hr{
+    border-radius: 100px;
+    background-color: red;
+    height: 2px;
+    border: 0;
+}
+.container-table{
+    padding-top:20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 0;
+}
+table{
+    box-shadow: 1px 7px 10px black;
+    width: 90%;
+    border-radius: 10px;
+    border: 0;
+}
+tr{
+    border: 0;
+    
+}
+td{
+    height: 40px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    align-items: center;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container-melhores{
+    margin-top: -20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:  rgb(29, 29, 29);
+    height: 120vh;
+}
+.container-end{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.end-tit {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-shadow:0 10px 10px black ;
+    
+}
+.end-tit-end{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    color: rgb(187, 185, 185);
+}
+.container-imagens{
+    width: 100%;
+    height: 70vh;
+    /* background-color: aqua; */
+}
+.container-imagens-margem{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container-img{
+    width: 20%;
+    height: 70%;
+    /* background-color: brown; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:  rgb(19, 19, 19);
+    box-shadow: 1px 7px 10px black;
+}
+.imgimg{
+    height: 90%;
+    width: 200px;
+    background-image: url(img/lele.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgimg2{
+    height: 90%;
+    width: 200px;
+    background-image: url(img/airto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgimg3{
+    height: 90%;
+    width: 200px;
+    background-image: url(img/lele3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.controle-label{
+    
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.end-tit-img {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-shadow:0 5px 15px black ;
+    
+}
+.controle-label{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+}
+
+/* active quando for executado clicado */
+

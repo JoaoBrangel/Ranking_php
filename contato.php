@@ -1,3 +1,7 @@
+<?php
+session_start();
+require("databaseconnect.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,14 +15,28 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
+<header>
+        <a href="index.php"><img src="css/img/LOGO.png" class="logo"></a>
+
         <ul>
             <li><a href="index.php">HOME</a></li>
-            <li><a href="conteudo.php">CONTEUDO</a></li>
+            <li><a href="#.php">VOTAR</a></li>
+            <li><a href="conteudo2.php">TIMES</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
-            <li><a href="#">CONTATO</a></li>
-            <li><a href="conexao.php">conexao</a></li>
+            <li><a href="contato.php">CONTATO</a></li>
+            <li>
+                <?php
+                if (isset($_SESSION['logado']) && $_SESSION['logado'] == "s") {
+                    //se a sessão existir e conter o valor de "s"
+                    echo "Olá ", $_SESSION["usuario"], "<br>";
+                    echo "<a href='logout.php'>Desconectar</a>";
+                } else {
+                ?>
+                    <a href="login.php">login</a>
+            </li>
+        <?php
+                }
+        ?>
         </ul>
     </header>
 

@@ -1,3 +1,7 @@
+<?php
+session_start();
+require("databaseconnect.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -11,40 +15,37 @@
 
 <body>
 <header>
-        <div class="logo"></div>
+        <a href="index.php"><img src="css/img/LOGO.png" class="logo"></a>
 
         <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="conteudo.php">CONTEUDO</a></li>
+            <li><a href="index.php">HOME</a></li>
+            <li><a href="#.php">VOTAR</a></li>
+            <li><a href="conteudo2.php">TIMES</a></li>
             <li><a href="descritiva.php">DESCRITIVA</a></li>
             <li><a href="contato.php">CONTATO</a></li>
             <li>
-            <?php
-            if(isset($_SESSION['logado']) && $_SESSION['logado'] == "s"){
-                //se a sessão existir e conter o valor de "s"
-                echo"Olá ", $_SESSION["usuario"], "<br>";
-                echo"<a href='logout.php'>Desconectar</a>";
-                }else{
-                    ?>
-                    <a href="login.php">login</a></li>
-                    <?php
+                <?php
+                if (isset($_SESSION['logado']) && $_SESSION['logado'] == "s") {
+                    //se a sessão existir e conter o valor de "s"
+                    echo "Olá ", $_SESSION["usuario"], "<br>";
+                    echo "<a href='logout.php'>Desconectar</a>";
+                } else {
+                ?>
+                    <a href="login.php">login</a>
+            </li>
+        <?php
                 }
-            ?>
+        ?>
         </ul>
     </header>
 
     <div class="img_topo">
-                    <a>Ranking dos pilotos Principais</a>
-                
-                
-                <img src="css/img/grupo.jpg">
 
+        <div class="img-top-fundo">
+            <label class="nome-topo">Participantes</label>
+        </div>
     </div>
 
-    <?php
-    echo 'descritiva';
-
-    ?>
         <div class="nome">JOÃO LUIZ</div>
 
         <div class="divpai">

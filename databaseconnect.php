@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost'; //tipo do local
 $usuario = 'root'; //nome do usuario do banco
-$senha = '@Dhigo1998'; // senha
+$senha = 'Cleide111'; // senha
 $bd ='ranking'; //database
 $con = mysqli_connect($host, $usuario, $senha, $bd);
 if(mysqli_connect_errno()){
