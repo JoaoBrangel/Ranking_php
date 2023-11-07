@@ -14,7 +14,7 @@ require("databaseconnect.php");
 </head>
 
 <body>
-<header>
+    <header>
         <a href="index.php"><img src="css/img/LOGO.png" class="logo"></a>
 
         <ul>
@@ -46,119 +46,160 @@ require("databaseconnect.php");
         </div>
     </div>
 
-        <div class="nome">JOÃO LUIZ</div>
+    <div class="nome">JOÃO LUIZ</div>
 
-        <div class="divpai">
-            <div class="foto">
-                <div class="img">
-                    <img src="css/img/joao.jpeg">
+    <div class="divpai">
+        <div class="foto">
+            <div class="img">
+                <img src="css/img/joao.jpeg">
 
-                    <div class="linkedin">
-                        <a target="_black" href="https://www.linkedin.com/in/jo%C3%A3o-luiz-analista?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
-                    </div>
-                    <div class="git">
-                        <a target="_black" href="https://github.com/JoaoBrangel"><img src="css/img/logo github.png" class="logo"></a>
-                    </div>
-
+                <div class="linkedin">
+                    <a target="_black" href="https://www.linkedin.com/in/jo%C3%A3o-luiz-analista?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
                 </div>
+                <div class="git">
+                    <a target="_black" href="https://github.com/JoaoBrangel"><img src="css/img/logo github.png" class="logo"></a>
+                </div>
+
             </div>
-            <div class="desc">
-                
-                <h1>20 anos</h1>
-                
-                <h1>Aluno da Universidade Cidade de São Paulo, cursando segundo semestre de Análise 
+        </div>
+        <div class="desc">
+
+            <h1>20 anos</h1>
+
+            <h1>Aluno da Universidade Cidade de São Paulo, cursando segundo semestre de Análise
                 e Desenvolvimento de sistemas.</h1>
-            
-                <h1>RGM : 33593329.</h1> 
-                
-                <h1>Responsável pela parte de script mysql, PHP e estilização em front-end.</h1>
+
+            <h1>RGM : 33593329.</h1>
+
+            <h1>Responsável pela parte de script mysql, PHP e estilização em front-end.</h1>
+        </div>
+    </div>
+
+    <div class="nome">RODRIGO MACIEL</div>
+
+    <div class="divpai">
+        <div class="desc">
+            <h1>25 anos</h1>
+
+            <h1> Aluno da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
+
+            <h1>RGM : 33604568.</h1>
+
+            <h1>Responsável por realizar scripts em PHP, mysql e estilização em front-end.</h1>
+        </div>
+        <div class="foto">
+            <div class="img">
+                <img src="css/img/digo.jpeg">
+
+                <div class="linkedin">
+                    <a target="_black" href="https://www.linkedin.com/in/rodrigo-maciel-364470275/"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
+                </div>
+                <div class="git">
+                    <a target="_black" href="https://github.com/Dhigoo"><img src="css/img/logo github.png" class="logo"></a>
+                </div>
+
+
             </div>
         </div>
+    </div>
 
-        <div class="nome">RODRIGO MACIEL</div>
+    <div class="nome">MARIA EDUARDA</div>
 
-        <div class="divpai">
-            <div class="desc">
-                <h1>25 anos</h1>
-                
-                <h1> Aluno da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
-            
-                <h1>RGM : 33604568.</h1> 
-                
-                <h1>Responsável por realizar scripts em PHP, mysql e estilização em front-end.</h1>
-            </div>
-            <div class="foto">
-                <div class="img">
-                    <img src="css/img/digo.jpeg">
+    <div class="divpai">
+        <div class="foto">
+            <div class="img">
+                <img src="css/img/duda.jpeg">
 
-                    <div class="linkedin">
-                        <a target="_black" href="https://www.linkedin.com/in/rodrigo-maciel-364470275/"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
-                    </div>
-                    <div class="git">
-                        <a target="_black" href="https://github.com/Dhigoo"><img src="css/img/logo github.png" class="logo"></a>
-                    </div>
-
-                    
+                <div class="linkedin">
+                    <a target="_black" href="https://www.linkedin.com/in/maria-eduarda-rodrigues-alves-12803b205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
                 </div>
+                <div class="git">
+                    <a target="_black" href="https://github.com/Dudarodrigues1"><img src="css/img/logo github.png" class="logo"></a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="desc">
+            <h1>18 anos</h1>
+
+            <h1>Aluna da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
+
+            <h1>RGM : 33604550.</h1>
+
+            <h1>Responsável por modelagem do site, script em PHP e mysql.</h1>
+        </div>
+    </div>
+
+    <div class="nome">GEOVANA VIRGINIA</div>
+
+    <div class="divpai">
+        <div class="desc">
+            <h1>19 anos</h1>
+
+            <h1>Aluna da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
+
+            <h1>RGM : 33482756.</h1>
+
+            <h1>Responsável por programar scripts PHP, mysql, estilização da página.</h1>
+        </div>
+        <div class="foto">
+            <div class="img">
+                <img src="CSS/img/gi.jpg">
+
+                <div class="linkedin">
+                    <a target="_black" href="https://www.linkedin.com/in/geovana-virginia-martins-da-m%C3%A1rio-a1457a191?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
+                </div>
+                <div class="git">
+                    <a target="_black" href="https://github.com/geovanaS2"><img src="css/img/logo github.png" class="logo"></a>
+                </div>
+
+
             </div>
         </div>
         
-        <div class="nome">MARIA EDUARDA</div>
+    </div>
+    <div class="conteinersession">
+            <h1>Session</h1>
 
-        <div class="divpai">
-            <div class="foto">
-                <div class="img">
-                    <img src="css/img/duda.jpeg">
-
-                    <div class="linkedin">
-                        <a target="_black" href="https://www.linkedin.com/in/maria-eduarda-rodrigues-alves-12803b205?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
+            <span>A session foi usada para trazer alertas de erros ou avisos e ligar as variaveis entre as paginas e assim conseguindo fazer a ligação com o bando de dados!</span>
+            <br>
+            <br>
+            <br>
+        </div>
+    <footer>
+        <div class="forter-controler-main">
+            <div class="forter-controler">
+                <div class="footer1">
+                    <img src="css/img/LOGO.png" class="icon-logo">
+                </div>
+                <div class="footer2">
+                    <div class="p1">
+                        <label><b>Quem somos</b></label>
+                        <br>
+                        <br>
+                        <a>Site desenvolvido para amantes de fórmula 1. Fiquei por dentro de notícias, estatísticas e entretenimento do mundo do automobilismo.</a>
                     </div>
-                    <div class="git">
-                        <a target="_black" href="https://github.com/Dudarodrigues1"><img src="css/img/logo github.png" class="logo"></a>
+                    <div class="p2">
+                        <a href="conteudo.php">Ranking</a>
                     </div>
-
-                    
+                    <div class="p3">
+                        <a href="conteudo.php">Fale conosco</a>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="icon">
+                        <a href="#"><img src="css/img/logo github.png" class="icon-git"></a>
+                        <a href="#"><img src="css/img/LinkedIn_logo_initials.png" class="icon-link"></a>
+                    </div>
                 </div>
             </div>
-            <div class="desc">
-                <h1>18 anos</h1>
-                
-                <h1>Aluna da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
-            
-                <h1>RGM : 33604550.</h1> 
-                
-                <h1>Responsável por modelagem do site, script em PHP e mysql.</h1>
+            <div class="direitos">
+                <Label>© 2023 - 2023 - http://localhost/ranking_php/index.php - TODOS OS DIREITOS RESERVADOS.</Label>
             </div>
         </div>
+    </footer>
 
-        <div class="nome">GEOVANA VIRGINIA</div>
-
-        <div class="divpai">
-            <div class="desc">
-                <h1>19 anos</h1>
-                
-                <h1>Aluna da Universidade Cidade de São Paulo, cursando segundo semestre de Análise e Desenvolvimento de sistemas.</h1>
-            
-                <h1>RGM : 33482756.</h1> 
-                
-                <h1>Responsável por programar scripts PHP, mysql, estilização da página.</h1>
-            </div>
-            <div class="foto">
-                <div class="img">
-                    <img src="CSS/img/gi.jpg">
-
-                    <div class="linkedin">
-                        <a target="_black" href="https://www.linkedin.com/in/geovana-virginia-martins-da-m%C3%A1rio-a1457a191?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img src="css/img/LinkedIn_logo_initials.png" class="logo"></a>
-                    </div>
-                    <div class="git">
-                        <a target="_black" href="https://github.com/geovanaS2"><img src="css/img/logo github.png" class="logo"></a>
-                    </div>
-
-                    
-                </div>
-            </div>
-        </div>
-        
 </body>
 
 </html>

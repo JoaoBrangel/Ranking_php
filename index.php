@@ -128,13 +128,13 @@ require("databaseconnect.php");
                     </div>
                     <div class="container-img">
                         <div class="controle-label">
-                            <label>Lewis Hamilton</label>
+                            <label>Ayrton Senna</label>
                         </div>
                         <img class="imgimg2"></img>
                     </div>
                     <div class="container-img">
                         <div class="controle-label">
-                            <label>Lewis Hamilton</label>
+                            <label>michael schumacher</label>
                         </div>
                         <img class="imgimg3"></img>
                     </div>
