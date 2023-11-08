@@ -49,7 +49,8 @@ require("databaseconnect.php");
             </div>
         </div>
 
-
+            <!-- para trocar a chegada do formulario, troque o email a baixo.
+            o formsubmit é o site que vai ser redirecionado o email para a caixa de mensagem.  -->
 
         <form class="controle-form" action="https://formsubmit.co/jaum2003luiz@gmail.com" method="POST" class="form">
 

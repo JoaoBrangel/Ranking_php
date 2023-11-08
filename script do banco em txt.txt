@@ -7,7 +7,6 @@ create table piloto(
     Nome_piloto varchar (100) not null,
     equipe_piloto varchar (100) not null,
     pais_piloto varchar (100) not null,
-    pais_piloto varchar (100) not null,
     numero_piloto varchar (100) not null
 );
 select * from piloto;
