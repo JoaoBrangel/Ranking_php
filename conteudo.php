@@ -43,12 +43,12 @@ require("databaseconnect.php");
 
     <div class="img_topo1">
 
-        <div class="img-top-fundo">
+        <div class="img-top-fundo"> <!--Link da imagen: https://br.bolavip.com/esportes/F1-Saiba-os-horarios-e-onde-assistir-ao-GP-de-Sao-Paulo-que-tera-corrida-sprint-em-Interlagos-20221109-0008.html -->
             <label class="nome-topo">faça o seu voto</label>
         </div>
     </div>
 
-    <div class="img-top-fundo">
+    <div class="img-top-fundo"> <!--Link da imagen: https://br.bolavip.com/esportes/F1-Saiba-os-horarios-e-onde-assistir-ao-GP-de-Sao-Paulo-que-tera-corrida-sprint-em-Interlagos-20221109-0008.html -->
         <div class="desc-conteudo">
             <div class="desc-descritiva">
                 <p>Qual o seu palpite para o próximo campeão?. Vote no seu piloto favorito e acompanhe as estatísticas.</p>
@@ -92,15 +92,15 @@ require("databaseconnect.php");
                 <div class="container-camada1">
 
                     <div class="card">
-                        <img src="css/img/maxvestappen.jpg">
-                        <input type='submit' name='voto' value='1' />
+                        <img src="css/img/maxvestappen.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/verstappen.jpg.img.640.medium.jpg/1677069646195.jpg-->
+                        <input type='submit' name='voto' value='1' /> 
                     </div>
                     <div class="card">
-                        <img src="css/img/sergioperez.jpg">
-                        <input type='submit' name='voto' value='2' />
+                        <img src="css/img/sergioperez.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/sainz.jpg.img.640.medium.jpg/1677069189406.jpg-->
+                        <input type='submit' name='voto' value='2' /> 
                     </div>
                     <div class="card">
-                        <img src="css/img/lewis.jpg">
+                        <img src="css/img/lewis.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/norris.jpg.img.640.medium.jpg/1677069505471.jpg-->
                         <input type='submit' name='voto' value='3' />
                     </div>
 
@@ -109,16 +109,16 @@ require("databaseconnect.php");
                 <div class="container-camada1">
 
                     <div class="card">
-                        <img src="css/img/fernando alonzo.jpg">
+                        <img src="css/img/fernando alonzo.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/alonso.jpg.img.640.medium.jpg/1677244577162.jpg-->
                         <input type='submit' name='voto' value='4' />
                     </div>
                     <div class="card">
-                        <img src="css/img/charlez lec.jpg">
-                        <input type='submit' name='voto' value='5' />
+                        <img src="css/img/charlez lec.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/leclerc.jpg.img.640.medium.jpg/1677069223130.jpg-->
+                        <input type='submit' name='voto' value='5' /> 
                     </div>
                     <div class="card">
-                        <img src="css/img/lando norriz.jpg">
-                        <input type='submit' name='voto' value='6' />
+                        <img src="css/img/lando norriz.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/sainz.jpg.img.640.medium.jpg/1677069189406.jpg-->
+                        <input type='submit' name='voto' value='6' /> 
                     </div>
 
                 </div>
@@ -126,16 +126,16 @@ require("databaseconnect.php");
                 <div class="container-camada1">
 
                     <div class="card">
-                        <img src="css/img/pirre gasly.jpg">
-                        <input type='submit' name='voto' value='7' />
+                        <img src="css/img/pirre gasly.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/gasly.jpg.img.640.medium.jpg/1676983081984.jpg-->
+                        <input type='submit' name='voto' value='7' /> 
                     </div>
                     <div class="card">
-                        <img src="css/img/geoge russel.jpg">
-                        <input type='submit' name='voto' value='8' />
+                        <img src="css/img/geoge russel.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/russell.jpg.img.640.medium.jpg/1677069334466.jpg-->
+                        <input type='submit' name='voto' value='8' /> 
                     </div>
                     <div class="card">
-                        <img src="css/img/carlos sainz.jpg">
-                        <input type='submit' name='voto' value='9' />
+                        <img src="css/img/carlos sainz.jpg"> <!--Link da imagem: https://media.formula1.com/content/dam/fom-website/drivers/2023Drivers/sainz.jpg.img.640.medium.jpg/1677069189406.jpg-->
+                        <input type='submit' name='voto' value='9' /> 
                     </div>
 
                 </div>

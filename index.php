@@ -51,7 +51,7 @@ require("databaseconnect.php");
         </ul>
     </header>
 
-    <div class="img_topo">
+    <div class="img_topo"> <!--Link da imagem: https://images.app.goo.gl/U8VDD9i9HkfatHcC8-->
 
         <div class="img-top-fundo">
             <label class="nome-topo">Ranking dos pilotos Principais</label>
@@ -124,17 +124,17 @@ require("databaseconnect.php");
                         <div class="controle-label">
                             <label>Lewis Hamilton</label>
                         </div>
-                        <img class="imgimg"></img>
+                        <img class="imgimg"></img> <!--Link da imagem: -->
                     </div>
                     <div class="container-img">
                         <div class="controle-label">
-                            <label>Ayrton Senna</label>
+                            <label>Ayrton Senna</label> <!--Link da imagem: https://br.pinterest.com/pin/782359766530546617/-->
                         </div>
                         <img class="imgimg2"></img>
                     </div>
                     <div class="container-img">
                         <div class="controle-label">
-                            <label>michael schumacher</label>
+                            <label>michael schumacher</label> <!--Link da imagem: https://images.app.goo.gl/1a39qweXMVBncDYr5-->
                         </div>
                         <img class="imgimg3"></img>
                     </div>
